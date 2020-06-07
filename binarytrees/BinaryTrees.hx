@@ -9,4 +9,10 @@ import neko.Lib;
 
 class BinaryTrees
 {
-  
+  inline private static var minDepth = 4;
+
+  public static function main()
+  {
+    var num = Std.parseInt(Sys.args()[0]);
+
+    var maxDepth = (minDepth+2 >
