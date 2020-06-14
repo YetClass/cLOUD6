@@ -19,4 +19,8 @@ class BinaryTrees
     var stretchDepth = maxDepth + 1;
 
     var check = TreeNode.bottomUpTree(0, stretchDepth).itemCheck();
-    Lib.pr
+    Lib.println("stretch tree of depth "+stretchDepth+"\t check: " + check);
+
+    var longLivedTree = TreeNode.bottomUpTree(0, maxDepth);
+
+    var depth = minD
