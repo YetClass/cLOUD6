@@ -15,4 +15,8 @@ class BinaryTrees
   {
     var num = Std.parseInt(Sys.args()[0]);
 
-    var maxDepth = (minDepth+2 >
+    var maxDepth = (minDepth+2 > num) ? minDepth+2 : num;
+    var stretchDepth = maxDepth + 1;
+
+    var check = TreeNode.bottomUpTree(0, stretchDepth).itemCheck();
+    Lib.pr
