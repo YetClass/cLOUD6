@@ -23,4 +23,11 @@ class BinaryTrees
 
     var longLivedTree = TreeNode.bottomUpTree(0, maxDepth);
 
-    var depth = minD
+    var depth = minDepth;
+    while( depth <= maxDepth )
+    {
+      var iterations = 1 << (maxDepth - depth + minDepth);
+      check = 0;
+
+      for( ii in 1...iterations+1 )
+    
