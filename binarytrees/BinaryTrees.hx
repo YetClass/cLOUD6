@@ -30,4 +30,8 @@ class BinaryTrees
       check = 0;
 
       for( ii in 1...iterations+1 )
-    
+      {
+	check += TreeNode.bottomUpTree(ii, depth).itemCheck();
+	check += TreeNode.bottomUpTree(-ii, depth).itemCheck();
+      }
+      Lib.println((iterations*2) + "\t tree
