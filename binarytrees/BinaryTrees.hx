@@ -34,4 +34,8 @@ class BinaryTrees
 	check += TreeNode.bottomUpTree(ii, depth).itemCheck();
 	check += TreeNode.bottomUpTree(-ii, depth).itemCheck();
       }
-      Lib.println((iterations*2) + "\t tree
+      Lib.println((iterations*2) + "\t trees of depth " + depth + "\t check: " + check);
+      
+      depth += 2;
+    }
+    Lib.println("long lived tree of depth " + maxDepth + "\t check: "+ longLivedTr
