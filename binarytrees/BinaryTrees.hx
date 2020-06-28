@@ -48,4 +48,11 @@ class TreeNode
   private var right :TreeNode;
   private var item :Int;
 
-  public function n
+  public function new(item, ?left :TreeNode, ?right :TreeNode)
+  {
+    this.item = item;
+    this.left = left;
+    this.right = right;
+  }
+
+  public static function bottomUpTree(item
