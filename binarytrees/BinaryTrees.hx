@@ -38,4 +38,14 @@ class BinaryTrees
       
       depth += 2;
     }
-    Lib.println("long lived tree of depth " + maxDepth + "\t check: "+ longLivedTr
+    Lib.println("long lived tree of depth " + maxDepth + "\t check: "+ longLivedTree.itemCheck());
+  }
+}
+
+class TreeNode
+{
+  private var left :TreeNode;
+  private var right :TreeNode;
+  private var item :Int;
+
+  public function n
