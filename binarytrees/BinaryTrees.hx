@@ -55,4 +55,11 @@ class TreeNode
     this.right = right;
   }
 
-  public static function bottomUpTree(item
+  public static function bottomUpTree(item, depth)
+  {
+    if( depth>0 )
+      return new TreeNode(item,
+			  bottomUpTree(2*item-1, depth-1),
+			  bottomUpTree(2*item, depth-1));
+    else
+      r
