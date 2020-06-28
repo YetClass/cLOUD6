@@ -62,4 +62,12 @@ class TreeNode
 			  bottomUpTree(2*item-1, depth-1),
 			  bottomUpTree(2*item, depth-1));
     else
-      r
+      return new TreeNode(item);
+  }
+
+  public function itemCheck()
+  {
+    return if( left == null )
+      item;
+    else
+      item+left.item
