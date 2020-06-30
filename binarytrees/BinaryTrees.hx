@@ -70,4 +70,6 @@ class TreeNode
     return if( left == null )
       item;
     else
-      item+left.item
+      item+left.itemCheck()-right.itemCheck();
+  }
+}
