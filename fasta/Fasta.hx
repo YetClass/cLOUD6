@@ -79,3 +79,51 @@ class Fasta
       }
     }
     if( nn%width != 0 )
+      neko.Lib.println(buf.toString());
+  }
+
+  private function genRandom()
+  {
+    var lim = 1;
+    var ia = 3877;
+    var ic = 29573;
+    var im = 139968;
+
+    rnd = (rnd * ia + ic) % im;
+    return lim * rnd / im;
+  }
+
+  private function makeCumulative(tableProb:Array<Float>)
+  {
+    var probList = new List<Float>();
+    var prob = 0.0;
+    for( ii in 0...tableProb.length)
+    {
+      prob += tableProb[ii];
+      probList.add(prob);
+    }
+    return probList;
+  }
+
+  // replace this with binary search
+  private function bisect(list:List<Float>, item:Float)
+  {
+    var ret=0;
+    var iter = list.iterator();
+    while( iter.hasNext() )
+    {
+      if( item < iter.next() )
+	return ret;
+      else
+	ret++;
+    }
+    return -1;
+  }
+
+  public static function main()
+  {
+    var nn = Std.parseInt(neko.Sys.args()[0]);
+    var fasta = new Fasta();
+    fasta.run(nn);
+  }
+}
