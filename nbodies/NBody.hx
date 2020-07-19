@@ -19,4 +19,8 @@ typedef Planet = {
 class NBody
 {
     private static var SOLAR_MASS = 4 * Math.PI * Math.PI;
-    private static var DA
+    private static var DAYS_PER_YEAR = 365.24;
+    private static var DT = 1e-2;
+    private static var RECIP_DT = (1.0/DT);
+
+    private static function advance(bodies :
