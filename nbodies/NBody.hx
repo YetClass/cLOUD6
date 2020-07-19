@@ -23,4 +23,9 @@ class NBody
     private static var DT = 1e-2;
     private static var RECIP_DT = (1.0/DT);
 
-    private static function advance(bodies :
+    private static function advance(bodies :Array<Planet>)
+    {
+        for( i in 0...bodies.length )
+        {
+            var b = bodies[i];
+            for( j in (i+1)..
