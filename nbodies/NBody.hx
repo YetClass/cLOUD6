@@ -10,4 +10,13 @@ typedef Planet = {
     var y :Float;
     var z :Float;
     var vx :Float;
-    var vy :F
+    var vy :Float;
+    var vz :Float;
+    var mass :Float;
+}
+
+
+class NBody
+{
+    private static var SOLAR_MASS = 4 * Math.PI * Math.PI;
+    private static var DA
