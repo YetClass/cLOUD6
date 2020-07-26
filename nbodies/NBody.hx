@@ -33,4 +33,7 @@ class NBody
                 var b2 = bodies[j];
                 var dx = b.x - b2.x;
                 var dy = b.y - b2.y;
-                var dz = b.z - b2.
+                var dz = b.z - b2.z;
+                var invDist = 1.0/Math.sqrt(dx*dx + dy*dy + dz*dz);
+                var mag = invDist * invDist * invDist;
+      
