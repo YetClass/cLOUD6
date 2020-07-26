@@ -36,4 +36,7 @@ class NBody
                 var dz = b.z - b2.z;
                 var invDist = 1.0/Math.sqrt(dx*dx + dy*dy + dz*dz);
                 var mag = invDist * invDist * invDist;
-      
+                b.vx -= dx * b2.mass * mag;
+                b.vy -= dy * b2.mass * mag;
+                b.vz -= dz * b2.mass * mag;
+                b2.vx += dx * b.mass 
