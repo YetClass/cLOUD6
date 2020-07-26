@@ -28,4 +28,9 @@ class NBody
         for( i in 0...bodies.length )
         {
             var b = bodies[i];
-            for( j in (i+1)..
+            for( j in (i+1)...bodies.length )
+            {
+                var b2 = bodies[j];
+                var dx = b.x - b2.x;
+                var dy = b.y - b2.y;
+                var dz = b.z - b2.
