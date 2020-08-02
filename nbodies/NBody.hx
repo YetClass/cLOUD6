@@ -39,4 +39,12 @@ class NBody
                 b.vx -= dx * b2.mass * mag;
                 b.vy -= dy * b2.mass * mag;
                 b.vz -= dz * b2.mass * mag;
-                b2.vx += dx * b.mass 
+                b2.vx += dx * b.mass * mag;
+                b2.vy += dy * b.mass * mag;
+                b2.vz += dz * b.mass * mag;
+            }
+        }
+        for( b in bodies )
+        {
+            b.x += b.vx;
+          
