@@ -55,4 +55,8 @@ class NBody
     private static function energy(bodies :Array<Planet>)
     {
         var e = 0.0;
-        fo
+        for( i in 0...bodies.length )
+        {
+            var b = bodies[i];
+            e += 0.5 * b.mass * (b.vx*b.vx + b.vy*b.vy + b.vz*b.vz);
+          
