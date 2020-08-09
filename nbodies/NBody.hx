@@ -47,4 +47,12 @@ class NBody
         for( b in bodies )
         {
             b.x += b.vx;
-          
+            b.y += b.vy;
+            b.z += b.vz;
+        }
+    }
+
+    private static function energy(bodies :Array<Planet>)
+    {
+        var e = 0.0;
+        fo
