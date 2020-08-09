@@ -59,4 +59,8 @@ class NBody
         {
             var b = bodies[i];
             e += 0.5 * b.mass * (b.vx*b.vx + b.vy*b.vy + b.vz*b.vz);
-          
+            for( j in (i+1)...bodies.length )
+            {
+                var b2 = bodies[j];
+                var dx = b.x - b2.x;
+                var dy = 
