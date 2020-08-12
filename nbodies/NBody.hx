@@ -66,4 +66,12 @@ class NBody
                 var dy = b.y - b2.y;
                 var dz = b.z - b2.z;
                 var distance = Math.sqrt(dx*dx + dy*dy + dz*dz);
-                e -= (b.mass * b2.m
+                e -= (b.mass * b2.mass) / distance;
+            }
+        }
+        return e;
+    }
+
+    private static function offsetMomentum(bodies :Array<Planet>)
+    {
+    
