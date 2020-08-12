@@ -63,4 +63,7 @@ class NBody
             {
                 var b2 = bodies[j];
                 var dx = b.x - b2.x;
-                var dy = 
+                var dy = b.y - b2.y;
+                var dz = b.z - b2.z;
+                var distance = Math.sqrt(dx*dx + dy*dy + dz*dz);
+                e -= (b.mass * b2.m
