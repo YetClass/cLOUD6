@@ -74,4 +74,10 @@ class NBody
 
     private static function offsetMomentum(bodies :Array<Planet>)
     {
-    
+        var px = 0.0,
+            py = 0.0,
+            pz = 0.0;
+        for( b in bodies )
+        {
+            px += b.vx * b.mass;
+            py += b.vy * b.m
