@@ -80,4 +80,9 @@ class NBody
         for( b in bodies )
         {
             px += b.vx * b.mass;
-            py += b.vy * b.m
+            py += b.vy * b.mass;
+            pz += b.vz * b.mass;
+        }
+        bodies[0].vx = - px / SOLAR_MASS;
+        bodies[0].vy = - py / SOLAR_MASS;
+        bo
