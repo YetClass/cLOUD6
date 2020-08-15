@@ -85,4 +85,9 @@ class NBody
         }
         bodies[0].vx = - px / SOLAR_MASS;
         bodies[0].vy = - py / SOLAR_MASS;
-        bo
+        bodies[0].vz = - pz / SOLAR_MASS;
+    }
+
+    /*
+     * Rescale certain properties of bodies. That allows doing
+     * consequential advance()
