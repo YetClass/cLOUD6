@@ -107,4 +107,10 @@ class NBody
 
     inline private static function round(val :Float)
     {
-        return Math.round(
+        return Math.round(val*1e9)/1e9;
+    }
+
+    public static function main()
+    {
+        var bodies = new Array<Planet>();
+        bodies.push({x: 0,                  
