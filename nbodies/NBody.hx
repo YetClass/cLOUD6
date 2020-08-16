@@ -94,4 +94,10 @@ class NBody
      *
      * When all advances done, rescale bodies back to obtain correct energy.
      */
-    private static function scaleBodi
+    private static function scaleBodies(bodies :Array<Planet>, scale :Float)
+    {
+        for( b in bodies )
+        {
+            b.mass *= scale*scale;
+            b.vx *= scale;
+           
