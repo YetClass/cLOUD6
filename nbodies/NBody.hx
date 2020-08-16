@@ -90,4 +90,8 @@ class NBody
 
     /*
      * Rescale certain properties of bodies. That allows doing
-     * consequential advance()
+     * consequential advance()'s as if dt were equal to 1.0.
+     *
+     * When all advances done, rescale bodies back to obtain correct energy.
+     */
+    private static function scaleBodi
