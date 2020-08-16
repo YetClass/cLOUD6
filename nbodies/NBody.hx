@@ -100,4 +100,11 @@ class NBody
         {
             b.mass *= scale*scale;
             b.vx *= scale;
-           
+            b.vy *= scale;
+            b.vz *= scale;
+        }
+    }
+
+    inline private static function round(val :Float)
+    {
+        return Math.round(
