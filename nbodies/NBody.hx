@@ -119,4 +119,6 @@ class NBody
                     vx: 0,
                     vy: 0,
                     vz: 0,
-           
+                    mass: SOLAR_MASS });
+        bodies.push({x: 4.84143144246472090e+00,            // jupiter
+                    y: -1.1603200440274283
