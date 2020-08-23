@@ -113,4 +113,10 @@ class NBody
     public static function main()
     {
         var bodies = new Array<Planet>();
-        bodies.push({x: 0,                  
+        bodies.push({x: 0,                                  // sun
+                    y: 0,
+                    z: 0,
+                    vx: 0,
+                    vy: 0,
+                    vz: 0,
+           
