@@ -126,4 +126,7 @@ class NBody
                     vx: 1.66007664274403694e-03 * DAYS_PER_YEAR,
                     vy: 7.69901118419740425e-03 * DAYS_PER_YEAR,
                     vz: -6.90460016972063023e-05 * DAYS_PER_YEAR,
-                    mass: 9.547919384243266
+                    mass: 9.54791938424326609e-04 * SOLAR_MASS });
+        bodies.push({x: 8.34336671824457987e+00,            // saturn
+                    y: 4.12479856412430479e+00,
+      
