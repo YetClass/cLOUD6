@@ -140,4 +140,6 @@ class NBody
                     vx: 2.96460137564761618e-03 * DAYS_PER_YEAR,
                     vy: 2.37847173959480950e-03 * DAYS_PER_YEAR,
                     vz: -2.96589568540237556e-05 * DAYS_PER_YEAR,
-         
+                    mass: 4.36624404335156298e-05 * SOLAR_MASS });
+        bodies.push({x: 1.53796971148509165e+01,            // neptune
+                    y: -2.5
