@@ -149,4 +149,8 @@ class NBody
                     vz: -9.51592254519715870e-05 * DAYS_PER_YEAR,
                     mass: 5.15138902046611451e-05 * SOLAR_MASS });
 
-      
+        var n = Std.parseInt(Sys.args()[0]);
+        offsetMomentum(bodies);
+        neko.Lib.println(round(energy(bodies)));
+        scaleBodies(bodies, DT);
+     
