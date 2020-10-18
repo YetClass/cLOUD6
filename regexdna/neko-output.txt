@@ -1,0 +1,4 @@
+agggtaaa|tttaccct 0
+[cgt]gggtaaa|tttaccc[acg] 3
+a[act]ggtaaa|tttacc[agt]t 9
+ag[act]gtaaa|tttac[agt
