@@ -153,4 +153,9 @@ class NBody
         offsetMomentum(bodies);
         neko.Lib.println(round(energy(bodies)));
         scaleBodies(bodies, DT);
-     
+        for( i in 0...n )
+            advance(bodies);
+        scaleBodies(bodies, RECIP_DT);
+        neko.Lib.println(round(energy(bodies)));
+    }
+}
