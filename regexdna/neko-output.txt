@@ -8,4 +8,6 @@ agggt[cgt]aa|tt[acg]accct 4
 agggta[cgt]a|t[acg]taccct 3
 agggtaa[cgt]|[acg]ttaccct 5
 
-10174
+101745
+100000
+133640
